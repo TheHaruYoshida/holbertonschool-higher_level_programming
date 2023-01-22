@@ -9,5 +9,5 @@ elif div > 5:
     print("Last digit of", number, "is", div, "and is greater than 5")
 if div < 0:
     print("Last digit of", number, "is", div, "and is less than 6 and not 0")
-else:
+elif div == 0:
     print("Last digit of", number, "is", div, "and is 0")
