@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     new_square = []
     for x in range(0, len(matrix)):
