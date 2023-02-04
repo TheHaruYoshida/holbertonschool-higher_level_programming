@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """return the result of adding two numbers"""
 
+
 def add_integer(a, b=98):
     """ adds two ints """
     if not isinstance(a, (int, float)):
