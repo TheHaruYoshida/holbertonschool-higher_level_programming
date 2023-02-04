@@ -47,7 +47,7 @@
     <BLANKLINE>
     <BLANKLINE>
     <BLANKLINE>
-    We just printed three new lines.
+    now I have printed three.
     <BLANKLINE>
 
 ::
