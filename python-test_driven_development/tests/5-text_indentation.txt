@@ -1,0 +1,57 @@
+ >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> text_indentation("Hello?")
+    Hello?
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("   Hi there.")
+    Hi there.
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("          ")
+
+::
+
+    >>> text_indentation("Hello.   ")
+    Hello.
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("    Woah now.    This is clueless.   ")
+    Woah now.
+    <BLANKLINE>
+    This is clueless.
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("No ending period, what great job")
+    No ending period, what great job
+
+::
+
+    >>> text_indentation("Try this:\nPrinted.")
+    Try this:
+    <BLANKLINE>
+    <BLANKLINE>
+    Printed.
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("\n\n\n now I have printed three.")
+    <BLANKLINE>
+    <BLANKLINE>
+    <BLANKLINE>
+    We just printed three new lines.
+    <BLANKLINE>
+
+::
+    >>> text_indentation("Sprinter \n new line.")
+    Sprinter 
+    new line.
+    <BLANKLINE>
