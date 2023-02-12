@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ defines the pascal_triangle function """
 
+
 def pascal_triangle(n):
     """ returns the pascal triangle of n """
     pascal_triangle_strategy = [[1]]
