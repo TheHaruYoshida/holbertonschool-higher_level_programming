@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+""" Define class Square """
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
+    """ class square to define a square """
     def __init__(self, size):
         self.__size = size
         super().__init__(size, size)
