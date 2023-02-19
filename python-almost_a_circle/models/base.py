@@ -3,6 +3,7 @@
 
 
 import json
+import os
 
 
 class Base:
@@ -49,3 +50,17 @@ class Base:
             haddo = cls(1)
         haddo.update(**dictionary)
         return haddo
+
+    @classmethod
+    def load_from_file(cls):
+        """returns a list full of instances"""
+        filename = cls.__name__ + ".json"
+        list_i = []
+        list_dicts = []
+        if os.path.exists(filename):
+            with open(filename, 'r') as f:
+                s = f.read()
+                list_dicts = cls.from_json_string(s)
+                for d in list_dicts:
+                    list_i.append(cls.create(**d))
+        return list_i
